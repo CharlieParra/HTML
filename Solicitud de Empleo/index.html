@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title> Solicitud de empleo </title>
+    </head>
+
+    <!-- <td>: Nueva celda hacia la derecha (Table data (cell))-->
+    <!-- <tr>: Nueva celda hacia abajo (Table row)-->
+
+    <body>
+        <form id = "form">
+            <table border = "1">
+                <td>
+                    <table>
+                        <tbody>
+                            <td>
+                                <table border = "1">
+                                    <th rowspan = "1">
+                                        <h1> Solicitud de Empleo </h1>
+                                    </th>
+    
+                                    <tr>
+                                        <td rowspan = "3">
+                                            Puesto que solicita:
+                                            <input type = "text" id = "Puesto"> <br>
+                                            <h6> <center>
+                                                Sea tan amable de llenar esta solicitud en forma manuscrita <br>
+                                                NOTA: Toda información aquí proporcionada será tratada <br>
+                                                confidencialmente.
+                                            </center> </h6>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tbody>
+                    </table>
+                </td>
+
+                <td>
+                    <table border = "1">
+                        <tr>
+                            <td>
+                                <center> Fecha </center>
+                                <center> <input type = "date" id = "Fecha"> </center>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <center> Sueldo Mensual Deseado </center>
+                                <input type = "number" id = "SaldoDeseado">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <center> Sueldo Mensual Aprobado </center>
+                                <input type = "number" id = "SaldoAprobado">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <center> Fecha de Contratación </center>
+                                <center> <input type = "date" id = "FechaContratacion"> </center>
+                            </td>
+                        </tr>
+                    </table>
+                    <td>_____________________________________</td>
+                </td>
+                
+                <table border = "1">
+                    <th colspan = "3">
+                        <center> Datos personales </center>
+                    </th>
+
+                    <tbody>
+                        <tr>
+                            <td colspan = "2">
+                                Apellido Paterno
+                                ________
+                                Apellido Materno
+                                _______
+                                Apellido Nombre(s) <br>
+                                <input type = "text" id = "Nombre" required>
+                                <input type = "text" id = "ApellidoPaterno" required>
+                                <input type = "text" id = "ApellidoMaterno" required>
+                            </td>
+    
+                            <td>
+                                Edad <br>
+                                <input type = "number" id = "Edad">
+                                Años
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Domicilio
+                                _____________
+                                Colonia
+                                ________________
+                                Código Postal <br>
+                                <input type = "text" id = "Domicilio">
+                                <input type = "text" id = "Colonia">
+                                <input type = "text" id = "CodigoPostal">
+                            </td>
+
+                            <td>
+                                Teléfono <br>
+                                <input type = "tel" id = "Telefono">
+                            </td>
+
+                            <td>
+                                Sexo <br>
+                                <input type = "checkbox" id = "Masculino"> Masculino <br>
+                                <input type = "checkbox" id = "Femenino"> Femenino
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Ciudad, Estado
+                                _________
+                                Lugar de Nacimiento <br>
+                                <input type = "text" id = "ApellidoPaterno">
+                                <input type = "text" id = "ApellidoMaterno">
+                            </td>
+
+                            <td>
+                                Fecha de Nacimiento <br>
+                                <input type = "date" id = "FechaNacimiento">
+                            </td>
+
+                            <td>
+                                Nacionalidad <br>
+                                <input type = "text" id = "Nacionalidad">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Vive con <br>
+                                <input type = "checkbox">
+                                Sus padres
+                                <input type = "checkbox">
+                                Su familia
+                                <input type = "checkbox">
+                                Parientes
+                                <input type = "checkbox">
+                                Solo
+                            </td>
+
+                            <td>
+                                Estatura <br>
+                                <input type = "number">
+                            </td>
+
+                            <td>
+                                Peso <br>
+                                <input type = "number">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Personas que dependen de usted <br>
+                                <input type = "checkbox">
+                                Hijos
+                                <input type = "checkbox">
+                                Cónyuge
+                                <input type = "checkbox">
+                                Padres
+                                <input type = "checkbox">
+                                Otros
+                            </td>
+
+                            <td rowspan = "2">
+                                Estado Civil <br>
+                                <input type = "checkbox">
+                                Soltero
+                                <input type = "checkbox">
+                                Casado
+                                <input type = "checkbox">
+                                Otro
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <table border = "1">
+                    <th colspan = "4">
+                        <center> Documentación </center>
+                    </th>
+
+                    <tbody>
+                        <tr>
+                            <td colspan = "2">
+                                Clave Única de Registro de Población <br>
+                                <input type = "text" id = "CURP">
+                            </td>
+    
+                            <td colspan = "2">
+                                AFORE <br>
+                                <input type = "text" id = "AFORE">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Reg. Fed. de Contribuyentes
+                                <input type = "text" id = "RFC">
+                            </td>
+
+                            <td>
+                                Numero de Seguridad Social
+                                <input type = "text" id = "NSS">
+                            </td>
+
+                            <td>
+                                Cartilla de Servicio Militar No.
+                                <input type = "number" id = "CSM">
+                            </td>
+                            
+                            <td>
+                                Pasaporte No.
+                                <input type = "text" id = "Pasaporte">
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                Tiene licencia de manejo <br>
+                                <input type = "checkbox"> No
+                                <input type = "checkbox"> Sí
+                            </td>
+
+                            <td>
+                                Clase y Número de Licencia <br>
+                                <input type = "text" id = "Licencia">
+                            </td>
+
+                            <td colspan = "2">
+                                Siendo extranjero que documentos <br>
+                                le permiten trabajar en el país
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table border = "1">
+                    <th colspan = "3">
+                        <center> Estado de Salúd y Hábitos Personales </center>
+                    </th>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                ¿Cómo considera su estado de salúd actual? <br>
+                                <input type = "checkbox">
+                                Bueno
+                                <input type = "checkbox">
+                                Regular
+                                <input type = "checkbox">
+                                Malo
+                            </td>
+
+                            <td colspan = "2">
+                                ¿Padece alguna enfermedad crónica? <br>
+                                <input type = "checkbox">
+                                No
+                                <input type = "checkbox">
+                                Sí (Explique)
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                ¿Practica Ud. Algún Deporte? <br>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                ¿Pertenece a algún Club Social o Deportivo? <br>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                Cuál es su pasatiempo favorito? <br>
+                                <input type = "text">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan = "3">
+                                ¿Cuál es su meta en la vida? <br>
+                                <input type = "text">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table border = "1">
+                    <th colspan = "5">
+                        <center> Datos Familiares </center>
+                    </th>
+
+                    <tbody>
+                        <tr>
+                            <td colspan = "5">
+                                Nombre
+                                Vive
+                                Fin
+                                Domicilio
+                                Ocupación
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Padre
+                            </td>
+                            <td>
+                                <input type = "checkbox">
+                            </td>
+                            
+                            <td>
+                                <input type = "checkbox">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Madre
+                            </td>
+                            <td>
+                                <input type = "checkbox">
+                            </td>
+                            
+                            <td>
+                                <input type = "checkbox">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Esposa (o)
+                            </td>
+                            <td>
+                                <input type = "checkbox">
+                            </td>
+                            
+                            <td>
+                                <input type = "checkbox">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan = "5">
+                                Nombre y edades de los hijos <br>
+                                <input type = "text">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table border = "1">
+                    <th colspan = "6">
+                        <center> Escolaridad </center>
+                    </th>
+
+                    <tbody>
+                        <tr>
+                            <td colspan = "6">
+                                Nombre
+                                Dirección
+                                De
+                                A
+                                Años
+                                Título Recibido
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Primaria
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+                            
+                            <td>
+                                <input type = "date">
+                            </td>
+
+                            <td>
+                                <input type = "number">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Secundaria o Prevocacional
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+                            
+                            <td>
+                                <input type = "date">
+                            </td>
+
+                            <td>
+                                <input type = "number">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Preparatoria o Vocacional
+                            </td>
+                            
+                            <td>
+                                <input type = "text">
+                            </td>
+                            
+                            <td>
+                                <input type = "date">
+                            </td>
+
+                            <td>
+                                <input type = "number">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Profesional
+                            </td>
+                            
+                            <td>
+                                <input type = "text">
+                            </td>
+                            
+                            <td>
+                                <input type = "date">
+                            </td>
+
+                            <td>
+                                <input type = "number">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Comercial u Otras
+                            </td>
+                            
+                            <td>
+                                <input type = "text">
+                            </td>
+                            
+                            <td>
+                                <input type = "date">
+                            </td>
+
+                            <td>
+                                <input type = "number">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan = "6">
+                                Estudios que está efectuando en la actualidad: <br>
+                                Escuela
+                                <input type = "text">
+                                Horario
+                                <input type = "text">
+                                Curso o Carrea
+                                <input type = "text">
+                                Grado
+                                <input type = "text">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table border = "1">
+                    <th colspan = "2">
+                        <center> Conocimientos Generales </center>
+                    </th>
+
+                    <tr>
+                        <td>
+                            ¿Qué idiomas habla?
+                            (Nivel 50%, 75%, 100%) <br>
+                            <input type = "text">
+                        </td>
+
+                        <td>
+                            Funciones de oficina que domina <br>
+                            <input type = "text">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Máquina de Oficina o taller que sepa manejar <br>
+                            <input type = "text">
+                        </td>
+
+                        <td>
+                            Software que conoce <br>
+                            <input type = "text">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan = "2">
+                            Otros trabajos o funciones que domina <br>
+                            <input type = "text">
+                        </td>
+                    </tr>
+                </table>
+
+                <table border = "1">
+                    <th colspan = "5">
+                        <center> Empleo Actual y Anteriores </center>
+                    </th>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                Concepto
+                            </td>
+
+                            <td>
+                                Actual o último
+                            </td>
+
+                            <td>
+                                Anterior
+                            </td>
+
+                            <td>
+                                Anterior
+                            </td>
+
+                            <td>
+                                Anterior
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Tiempo que prestó sus servicios
+                            </td>
+
+                            <td>
+                                de a
+                            </td>
+
+                            <td>
+                                de a
+                            </td>
+
+                            <td>
+                                de a
+                            </td>
+
+                            <td>
+                                de a
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Nombre de la compañía
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Dirección
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Teléfono
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Puesto desempeñado
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Sueldos mensual:
+                            </td>
+
+                            <td>
+                                Inicial
+                                Final
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Motivo de separación
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Nombre de su jefe directo
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Puesto de su jefe directo
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+
+                            <td>
+                                
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                ¿Podemos solicitar <br>
+                                informes de usted? <br>
+                                <input type = "checkbox"> Sí <br>
+                                <input type = "checkbox"> No (Razones)
+                            </td>
+
+                            <td colspan = "4">
+                                Comentarios de sus jefes
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table border = "1">
+                    <th colspan = "5">
+                        <center> Referencias Personales (Favor de no incluir a jefes anteriores) </center>
+                    </th>
+
+                    <tbody>
+                        <tr>
+                            <td colspan = "5">
+                                Nombre
+                                _______________
+                                Domicilio
+                                ______________
+                                Teléfono
+                                ______________
+                                Ocupación
+                                ______________
+                                Tiempo de conocerlo
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                <input type = "text">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table border = "1">
+                    <th colspan = "2">
+                        <center>
+                            Datos Generales
+                            ______________________________________________
+                            Datos Económicos
+                        </center>
+                    </th>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                ¿Cómo supo de este empleo? <br>
+                                <input type = "checkbox">
+                                Anuncio
+                                <input type = "checkbox">
+                                Otro medio (anótelo)
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                ¿Tiene usted otros ingresos?
+                                _____________________
+                                Importe mensual <br>
+                                <input type = "checkbox">
+                                No
+                                <input type = "checkbox">
+                                Sí (descríbalos)
+                                <input type = "text">
+                                $ <input type = "number">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Tiene parientes trabajando en esta Empresa? <br>
+                                <input type = "checkbox">
+                                No
+                                <input type = "checkbox">
+                                Sí (nómbrelos)
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                ¿Su cónyuge trabaja?
+                                _____________________
+                                Percepción mensual <br>
+                                <input type = "checkbox">
+                                No
+                                <input type = "checkbox">
+                                Sí (¿dónde?)
+                                <input type = "text">
+                                $ <input type = "number">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                ¿Ha estado afianzado? <br>
+                                <input type = "checkbox">
+                                No
+                                <input type = "checkbox">
+                                Sí (nombre de la Cía.)
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                ¿Vive en casa propia?
+                                _____________________
+                                Valor aproximado <br>
+                                <input type = "checkbox">
+                                No
+                                <input type = "checkbox">
+                                Sí
+                                <input type = "text">
+                                $ <input type = "number">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                ¿Ha estado afiliado a algún sindicato? <br>
+                                <input type = "checkbox">
+                                No
+                                <input type = "checkbox">
+                                Sí ¿a Cuál?
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                ¿Paga renta?
+                                _____________________
+                                Renta mensual <br>
+                                <input type = "checkbox">
+                                No
+                                <input type = "checkbox">
+                                Sí
+                                <input type = "text">
+                                $ <input type = "number">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                ¿Tiene seguro de vida? <br>
+                                <input type = "checkbox">
+                                No
+                                <input type = "checkbox">
+                                Sí (nombre de la Cía.)
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                ¿Tiene automóvil propio?
+                                _______
+                                Marca
+                                _______________
+                                Modelo <br>
+                                <input type = "checkbox">
+                                No
+                                <input type = "checkbox">
+                                Sí
+                                <input type = "text">
+                                <input type = "text">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                ¿Puede viajar? <br>
+                                <input type = "checkbox">
+                                Sí
+                                <input type = "checkbox">
+                                No (razones)
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                ¿Tiene deudas?
+                                _________________________________
+                                Importe <br>
+                                <input type = "checkbox">
+                                No
+                                <input type = "checkbox">
+                                Sí (¿con quién?)
+                                <input type = "text">
+                                $ <input type = "number">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                ¿Está dispuesto a cambiar de lugar de residencia? <br>
+                                <input type = "checkbox">
+                                Sí
+                                <input type = "checkbox">
+                                No (razones)
+                                <input type = "text">
+                            </td>
+
+                            <td>
+                                ¿Cuánto abona mensualmente? <br>
+                                $ <input type = "number">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Fecha en que podría presentarse a trabajar <br>
+                                <input type = "date">
+                            </td>
+
+                            <td>
+                                ¿A cuánto ascienden sus gastos mensuales? <br>
+                                $ <input type = "number">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table border = "1">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <strong> Comentarios del Entrevistador y Firma </strong>
+                            </td>
+
+                            <td rowspan = "3">
+                                Hago constar que mis respuestas son verdaderas <br> <br> <br>
+                                <center> ___________________________ </center> <br>
+                                <center> Firma del solicitante </center>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <textarea> </textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </table>
+            
+            
+            <fieldset>
+                <legend>
+                    <center> Datos Personales </center>
+                </legend>
+
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" id="nombre"> 
+                            <br>Nombre    
+                        </td>
+
+                        <td>
+                            <input class="apellido">   
+                            <br>Apellido paterno  
+                        </td>
+
+                        <td>
+                            <input class="apellidoMaterno"> 
+                            <br>Apellido materno    
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Nombre</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" id="nombre"> 
+                            <br>Nombre    
+                        </td>
+
+                        <td>
+                            <input class="apellido">   
+                            <br>Apellido paterno  
+                        </td>
+
+                        <td>
+                            <input class="apellidoMaterno"> 
+                            <br>Apellido materno    
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Direccion</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <input class="calle"> 
+                            <br>Calle    
+                        </td>
+
+                        <td>
+                            <input class="No">   
+                            <br>No. 
+                        </td>
+
+                        <td>
+                            <input class="colonia"> 
+                            <br>Colonia    
+                        </td>
+
+                        <td>
+                            <input class="codigoPostal"> 
+                            <br>CP    
+                        </td>
+
+                        <td>
+                            <select class="ciudad">
+                                <option>Ciudad de Mexico</option>
+                                <option>Moterrey</option>
+                            </select>
+                            <br>Ciudad
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <table>
+                <tr>
+                    <td>sexo:</td>
+                    <td><input type="radio">Masculino</td>
+                    <td><input type="radio">Femenino</td>
+                    <td><input type="radio">Otro </td>
+                </tr>
+            </table> 
+
+            <table>
+                <tr>
+                    <td>Fecha de nacimiento:</td>
+
+                    <td>
+                        <select class="mes">
+                            <option>Enero</option>
+                            <option>Febrero</option>
+                            <option>Marzo</option>
+                            <option>Abirl</option>
+                            <option>Mayo</option>
+                            <option>Junio</option>
+                        </select>   
+                    </td>
+
+                    <td>
+                        <select class="dia">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>  
+                    </td>
+
+                    <td>
+                        <select class="año">
+                            <option>1997</option>
+                            <option>1998</option>
+                            <option>1999</option>
+                            <option>2000</option>
+                            <option>2001</option>
+                            <option>2002</option>
+                        </select>  
+                    </td>
+                </tr>
+            </table>
+            
+            CURP <input>
+    
+            <fieldset>
+                <legend>Lenguajes de programacion</legend>
+                <table>
+                    <tr>
+                        <td><input type="checkbox">C</td>
+                        <td><input type="checkbox">Ruby</td>
+                    </tr>
+    
+                    <tr>
+                        <td><input type="checkbox">C++</td>
+                        <td><input type="checkbox">Perl</td>
+                    </tr>
+    
+                    <tr>
+                        <td><input type="checkbox">Java</td>
+                        <td><input type="checkbox">R</td>
+                    </tr>
+    
+                    <tr>
+                        <td><input type="checkbox">Python</td>
+                        <td><input type="checkbox">Otro</td>
+                    </tr>
+                </table>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Pasatiempos</legend>
+                <table>
+                    <tr>
+                        <td><input type="checkbox">Leer</td>
+                        <td><input type="checkbox">Videojuegos</td>
+                        <td></td>
+                    </tr>
+    
+                    <tr>
+                        <td><input type="checkbox">Ver TV</td>
+                        <td><input type="checkbox">Ir al cine</td>
+                        <td><input type="checkbox">Otras cosas</td>
+                    </tr>
+    
+                    <tr>
+                        <td><input type="checkbox">Navegar por internet</td>
+                        <td><input type="checkbox">Ver Netflix</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Comentarios</legend>
+                <textarea></textarea>
+                <br>
+                <input onclick="obterDatos();">
+                <button>Borrar</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
