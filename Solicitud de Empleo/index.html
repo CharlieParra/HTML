@@ -104,9 +104,9 @@
                                 Colonia
                                 ________________
                                 Código Postal <br>
-                                <input type = "text" id = "Domicilio">
-                                <input type = "text" id = "Colonia">
-                                <input type = "text" id = "CodigoPostal">
+                                <input type = "text" name = "Domicilio">
+                                <input type = "text" name = "Colonia">
+                                <input type = "text" name = "CodigoPostal">
                             </td>
 
                             <td>
@@ -116,8 +116,8 @@
 
                             <td>
                                 Sexo <br>
-                                <input type = "checkbox" id = "Masculino"> Masculino <br>
-                                <input type = "checkbox" id = "Femenino"> Femenino
+                                <input type = "radio" name="sex-1" id = "Masculino"> Masculino <br>
+                                <input type = "radio" name="sex-1" id = "Femenino"> Femenino
                             </td>
                         </tr>
 
@@ -325,11 +325,11 @@
                                 Padre
                             </td>
                             <td>
-                                <input type = "checkbox">
+                                <input type = "radio" name="vive-padre" >
                             </td>
                             
                             <td>
-                                <input type = "checkbox">
+                                <input type = "radio" name="vive-padre" >
                             </td>
 
                             <td>
@@ -346,11 +346,11 @@
                                 Madre
                             </td>
                             <td>
-                                <input type = "checkbox">
+                                <input type = "radio" name="vive-madre">
                             </td>
                             
                             <td>
-                                <input type = "checkbox">
+                                <input type = "radio" name="vive-madre">
                             </td>
 
                             <td>
@@ -367,11 +367,11 @@
                                 Esposa (o)
                             </td>
                             <td>
-                                <input type = "checkbox">
+                                <input type = "radio" name="vive-esposa">
                             </td>
                             
                             <td>
-                                <input type = "checkbox">
+                                <input type = "radio" name="vive-esposa">
                             </td>
 
                             <td>
@@ -1198,9 +1198,9 @@
             <table>
                 <tr>
                     <td>sexo:</td>
-                    <td><input type="radio">Masculino</td>
-                    <td><input type="radio">Femenino</td>
-                    <td><input type="radio">Otro </td>
+                    <td><input type="radio" id="sex-2" name="sex-2">Masculino</td>
+                    <td><input type="radio" id="sex-2" name="sex-2">Femenino</td>
+                    <td><input type="radio" id="sex-2" name="sex-2">Otro </td>
                 </tr>
             </table> 
 
